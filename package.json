@@ -1,0 +1,19 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "learning javascript",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tizah/JavascriptPractice-.git"
+  },
+  "author": "davidzagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tizah/JavascriptPractice-/issues"
+  },
+  "homepage": "https://github.com/tizah/JavascriptPractice-#readme"
+}
