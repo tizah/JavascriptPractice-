@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tizah/JavascriptPractice-/issues"
   },
-  "homepage": "https://github.com/tizah/JavascriptPractice-#readme"
+  "homepage": "https://github.com/tizah/JavascriptPractice-#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
