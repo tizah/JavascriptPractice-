@@ -50,18 +50,18 @@ while (month < 12) {
 
 // console.log(monthsInYear);
 // console.log(monthsInYear.length - 1);
-console.log([
-  {
-    year: year,
-    startWeekInYear: moment(monthsInYear[0].start).format("YYYY-MM-DD"),
-    endWeekInYear: moment(monthsInYear[11].end).format("YYYY-MM-DD")
-  }
-]);
-
-return [
-  {
-    year: year,
-    startWeekInYear: moment(monthsInYear[0].start).format("YYYY-MM-DD"),
-    endWeekInYear: moment(monthsInYear[11].end).format("YYYY-MM-DD")
-  }
-];
+// console.log([
+//   {
+//     year: year,
+//     startWeekInYear: moment(monthsInYear[0].start).format("YYYY-MM-DD"),
+//     endWeekInYear: moment(monthsInYear[11].end).format("YYYY-MM-DD")
+//   }
+// ]);
+var newArray = [];
+newArray.push({
+  year: year,
+  startWeekInYear: moment(monthsInYear[0].start).format("YYYY-MM-DD"),
+  endWeekInYear: moment(monthsInYear[11].end).format("YYYY-MM-DD")
+});
+console.log(newArray);
+return newArray;
