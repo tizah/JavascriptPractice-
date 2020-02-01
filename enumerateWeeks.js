@@ -1,8 +1,8 @@
 const moment = require("moment");
 
-let startDate = "2019-01-01";
-let firstDateOfMonth = "2019-01-01";
-let endWeekInYear = "2019-12-31";
+let startDate = "2020-01-01";
+let firstDateOfMonth = "2020-01-01";
+let endWeekInYear = "2020-12-31";
 // You can increase the finalEndDate
 const finalEndDate = moment(new Date(endWeekInYear))
   .endOf("week")
@@ -17,6 +17,8 @@ while (startDate < finalEndDate) {
     .format("YYYY-MM-DD");
 
   const label = `WK ${moment(startDate).week()}`;
+
+  //litle fix on the class curric app
   if (startDate === firstDateOfMonth) {
     weeks.push({ start: startDate, end: endDate, label });
   } else {
@@ -29,7 +31,7 @@ while (startDate < finalEndDate) {
       label
     });
   }
-
+  ///stop of fix on the class curric app
   startDate = moment(startDate)
     .add(7, "days")
     .format("YYYY-MM-DD");
