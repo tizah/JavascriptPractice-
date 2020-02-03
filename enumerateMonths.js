@@ -1,6 +1,6 @@
 const moment = require("moment");
 
-let year = 2018;
+let year = 2019;
 let month = 0;
 let startDate = "";
 let endDate = "";
@@ -24,28 +24,22 @@ while (month < 12) {
 
     endDate = moment([year, month])
       .endOf("month")
-      .isoWeekday(5);
+      .isoWeekday(1)
+      .add(5, "days")
+      .subtract(1, "days");
   } else {
-    if (month > 0) {
-      startDate = moment([year, month])
-        .startOf("month")
-        .isoWeekday(1)
-        .add(7, "days");
-    } else {
-      startDate = moment([year, month])
-        .startOf("month")
-        .isoWeekday(1);
-    }
+    startDate = moment([year, month]).startOf("month");
+    //.isoWeekday(1);
 
-    endDate = moment([year, month])
-      .endOf("month")
-      .isoWeekday(5);
+    endDate = moment([year, month]).endOf("month");
+    //.isoWeekday(1)
+    //.add(7, "days");
   }
   monthsInYear.push({
     start: moment(startDate).format("YYYY-MM-DD"),
     end: moment(endDate).format("YYYY-MM-DD"),
     name: moment(startDate)
-      .add(6, "days")
+      .add(7, "days")
       .format("MMMM")
   });
 
