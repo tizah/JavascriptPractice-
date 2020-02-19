@@ -1,6 +1,6 @@
 const moment = require("moment");
 
-let year = 2018;
+let year = 2020;
 let month = 0;
 let startDate = "";
 let endDate = "";
@@ -53,4 +53,9 @@ while (month < 12) {
 }
 
 console.log(monthsInYear);
+console.log(
+  moment("2020-06-01")
+    .startOf("isoWeek")
+    .format("YYYY-MM-DD")
+);
 return monthsInYear;
